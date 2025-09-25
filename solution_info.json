@@ -2,7 +2,7 @@
     "Type": "nap::SolutionInfo",
     "mID": "SolutionInfo",
     "AdditionalTargets": [
-        "apps/timecoder",
+        "apps/pocketdvs",
         "modules/napappgui",
         "modules/napaudioadvanced",
         "modules/naplibtag",
