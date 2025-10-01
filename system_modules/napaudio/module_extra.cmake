@@ -117,6 +117,8 @@ if (NAP_AUDIOFILE_SUPPORT)
             find_package(moodycamel REQUIRED)
         endif()
         add_include_to_interface_target(napaudio ${MOODYCAMEL_INCLUDE_DIRS})
+	    add_include_to_interface_target(napaudio ${LIBSNDFILE_INCLUDE_DIR})
+	    add_include_to_interface_target(napaudio ${LIBMPG123_INCLUDE_DIR})
 
         if(WIN32)
             # Add post-build step to set copy mpg123 to bin on Win64
